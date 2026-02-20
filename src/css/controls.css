@@ -1,0 +1,92 @@
+.controlsWrap {
+    padding: var(--padding-3xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--color-border);
+
+    background: var(--color-primary);
+    box-shadow:
+        var(--shadow-lg),
+        var(--shadow-inset);
+
+    color: var(--color-text-secondary);
+    box-sizing: border-box;
+}
+
+.newGameBtn {
+    height: 40px;
+    border: none;
+    border-radius: var(--radius-md);
+
+    background: linear-gradient(135deg, var(--color-orange), var(--color-orange-light));
+    color: var(--color-primary-dark);
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0.3px;
+
+    cursor: pointer;
+
+    transition: transform var(--transition-fast), box-shadow var(--transition-medium), filter var(--transition-medium);
+
+    box-shadow: var(--shadow-md);
+}
+
+.newGameBtn:hover {
+    filter: brightness(1.05);
+    transform: translateY(-2px);
+}
+
+.newGameBtn:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 8px var(--color-shadow-darker);
+}
+
+.historyBlock {
+    margin-top: var(--spacing-sm);
+    max-height: 220px;
+    overflow-y: auto;
+
+    background: var(--color-primary-light);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border-light);
+
+    padding: var(--padding-lg) var(--padding-xl);
+}
+
+.historyBlock::-webkit-scrollbar {
+    width: 6px;
+}
+
+.historyBlock::-webkit-scrollbar-thumb {
+    background: var(--color-scrollbar);
+    border-radius: var(--radius-xs);
+}
+
+.historyTitle {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-md);
+    letter-spacing: 0.5px;
+    margin-bottom: var(--spacing-sm);
+    display: block;
+    color: var(--color-text-primary);
+}
+
+.historyList {
+    padding-left: var(--spacing-3xl);
+    margin: 0;
+}
+
+.historyList li {
+    font-size: var(--font-size-md);
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-muted);
+    transition: color var(--transition-base);
+}
+
+.historyList li:hover {
+    color: var(--color-text-primary);
+}

@@ -1,0 +1,19 @@
+.bot {
+    background: var(--color-board-light);
+    color: #000;
+    padding: var(--spacing-xs);
+    width: 100%;
+    border-radius: var(--radius-pill) var(--radius-pill) 0% 0%;
+    font-weight: var(--font-weight-bold);
+    border: none;
+    cursor: pointer;
+    transition: background var(--transition-medium);
+}
+
+.bot::before {
+    content: "Активувати бота 🤖 ";
+}
+
+.bot:hover {
+    background: var(--color-board-light-hover);
+}

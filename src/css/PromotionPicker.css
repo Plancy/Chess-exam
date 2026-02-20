@@ -1,0 +1,47 @@
+.promotion-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-bg-overlay);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-modal);
+}
+
+.promotion-picker {
+  background: var(--color-secondary);
+  padding: var(--padding-3xl);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  text-align: center;
+  box-shadow: var(--shadow-modal);
+}
+
+.promotion-title {
+  margin-bottom: var(--spacing-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.promotion-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+}
+
+.promotion-button {
+  padding: var(--padding-sm) var(--padding-lg);
+  font-size: var(--font-size-xl);
+  background: #333;
+  color: var(--color-text-primary);
+  border: 1px solid #555;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background var(--transition-base);
+}
+
+.promotion-button:hover {
+  background: #444;
+}

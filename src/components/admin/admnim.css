@@ -1,0 +1,98 @@
+.adminPanel {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.adminBtn {
+    width: 100%;
+    padding: var(--padding-md) var(--padding-2xl);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--color-input-bg);
+    color: var(--color-text-primary);
+
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+
+    border: 1px solid var(--color-border-input-dark);
+    border-radius: var(--radius-lg);
+
+    cursor: pointer;
+}
+
+.adminBtn:hover {
+    background: var(--color-button-hover);
+    border-color: var(--color-border-input);
+    box-shadow: var(--shadow-md);
+}
+
+.adminBtn:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 6px var(--color-shadow);
+}
+
+.adminBtn:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(118, 148, 101, 0.5);
+}
+
+.adminBtn:disabled {
+    background: var(--color-admin-border);
+    border-color: var(--color-admin-border);
+    color: #8a99a8;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.adminTimer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--padding-md);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--color-admin-border);
+    background: var(--color-bg-dark);
+}
+
+.adminTimerTitle {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-lighter);
+    font-size: var(--font-size-sm);
+}
+
+.adminTimerRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+}
+
+.adminTimerLabel {
+    color: var(--color-text-dark);
+    font-size: var(--font-size-xs);
+}
+
+.adminTimerInput {
+    width: 90px;
+    padding: var(--padding-sm) var(--spacing-sm);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border-input);
+    background: var(--color-input-bg);
+    color: var(--color-text-lighter);
+    font-size: var(--font-size-sm);
+    transition: outline var(--transition-base), box-shadow var(--transition-base);
+}
+
+.adminTimerInput:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(118, 148, 101, 0.4);
+}
+
+.adminTimerBtn {
+    margin-top: var(--spacing-xs);
+}

@@ -1,0 +1,14 @@
+.footer p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+    text-align: center;
+}
+
+.footer {
+    margin-top: var(--spacing-3xl);
+    background: var(--color-primary);
+    padding: var(--font-size-xs);
+    border-radius: 10px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg), var(--shadow-inset);
+}

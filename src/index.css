@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  background-image: url(./assets/6106e109-ab00-460e-a6c7-7bbbb1e082e9.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+:root {
+  /*  кольори  */
+  --color-primary: #1f1f1f;
+  --color-primary-dark: #1a1a1a;
+  --color-primary-light: #2a2a2a;
+  --color-secondary: #222;
+
+  /* текст кольори */
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #eaeaea;
+  --color-text-muted: #d0d0d0;
+  --color-text-dark: #cbd2d9;
+  --color-text-lighter: #e7eef5;
+
+  /* кольори доски */
+  --color-board-light: #f0d9b5;
+  --color-board-dark: #b58863;
+  --color-board-border: #2b2b2b;
+  --color-board-light-hover: #d1b887;
+
+  /* Статус/Стан */
+  --color-success: #4caf50;
+  --color-danger: #ff4d4f;
+  --color-warning: #ffba4a;
+  --color-orange: #ff9d00;
+  --color-orange-light: #ffb236;
+
+  /* бэк/бордер*/
+  --color-bg-overlay: rgba(0, 0, 0, 0.6);
+  --color-bg-dark: rgba(31, 41, 51, 0.6);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-light: rgba(255, 255, 255, 0.06);
+  --color-border-input: #3e4c59;
+  --color-border-input-dark: #323f4b;
+
+  /* шади */
+  --color-check-shadow: rgba(255, 77, 79, 0.7);
+  --color-check-shadow-transparent: rgba(255, 77, 79, 0);
+  --color-success-shadow: rgba(76, 175, 80, 0.25);
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --color-shadow-dark: rgba(0, 0, 0, 0.25);
+  --color-shadow-darker: rgba(0, 0, 0, 0.3);
+  --color-shadow-darkest: rgba(0, 0, 0, 0.4);
+  --color-text-opacity: rgba(255, 255, 255, 0.15);
+
+  --color-scrollbar: rgba(255, 255, 255, 0.15);
+  --color-scrollbar-hover: #444;
+  --color-input-bg: #1f2933;
+  --color-button-hover: #273341;
+  --color-admin-border: #2f3b47;
+  --board-square-size: clamp(50px, 10vw, 100px);
+  --board-square-font-size: calc(var(--board-square-size) * 0.55);
+
+  --spacing-xs: 4px;
+  --spacing-sm: 6px;
+  --spacing-md: 10px;
+  --spacing-lg: 12px;
+  --spacing-xl: 14px;
+  --spacing-2xl: 16px;
+  --spacing-3xl: 18px;
+  --spacing-4xl: 20px;
+  --spacing-5xl: 24px;
+
+  /* паддинг */
+  --padding-xs: 8px;
+  --padding-sm: 10px;
+  --padding-md: 12px;
+  --padding-lg: 14px;
+  --padding-xl: 16px;
+  --padding-2xl: 18px;
+  --padding-3xl: 20px;
+
+  /* бордери */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-full: 50%;
+  --radius-pill: 20%;
+
+  /* фонти */
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-md: 14px;
+  --font-size-lg: 15px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+
+  /* ваг */
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --shadow-sm: 0 1px 4px var(--color-shadow);
+  --shadow-md: 0 6px 14px var(--color-shadow-dark);
+  --shadow-lg: 0 10px 30px var(--color-shadow-darkest);
+  --shadow-board: 0 20px 40px var(--color-shadow-dark);
+  --shadow-modal: 0 8px 30px var(--color-shadow-darkest);
+  --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  --transition-fast: 0.08s ease;
+  --transition-base: 0.15s ease;
+  --transition-medium: 0.2s ease;
+  --transition-slow: 1s ease-in-out;
+
+  --z-modal: 1000;
+  --z-tooltip: 100;
+  --z-overlay: 50;
+  --z-default: 1;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+}
