@@ -11,7 +11,7 @@ export default function BoardGrid({ board, selected, possibleMoves, handleSquare
                             const square = file + rank;
                             const fileIndex = files.indexOf(file);
                             const rankIndex = rank - 1;
-                            const isLight = (fileIndex + rankIndex) % 2 === 0;
+                            const isLight = (fileIndex + rankIndex) % 2 !== 0;
                             const isSelected = selected === square;
                             const isPossible = possibleMoves.includes(square);
                             const isKingInCheckSquare = isCheck && square === kingSquare;
